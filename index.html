@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Website</title>
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <h1 class="text-5xl text-center my-10">My Bank <span class="text-amber-700">Caluculation</span></h1>
+    <div class="grid grid-cols-3 w-9/12 gap-3 text-yellow-50 mx-auto font-semibold">
+        <div class="text-3xl bg-lime-500 p-10 rounded-xl">
+            <p class="mb-2">Deposit</p>
+            <p>$<span id="total-deposit" class="pl-1">00</span></p>
+        </div>
+        <div class="text-3xl bg-red-500 p-10 rounded-xl">
+            <p class="mb-2">Withdraw</p>
+            <p>$<span id="total-withdraw" class="pl-1">00</span></p>
+        </div>
+        <div class="text-3xl bg-blue-600 p-10 rounded-xl">
+            <p class="mb-2">Balance</p>
+            <p>$<span id="total-balance" class="pl-1">00</span></p>
+        </div>
+    </div>
+    <div class="grid mt-5 grid-cols-2 w-9/12 gap-3 text-yellow-50 mx-auto font-semibold">
+        <div class="bg-lime-500 p-10 rounded-xl">
+            <p class="mb-2 text-3xl">Your Deposit</p>
+            <input class="w-10/12 p-2 rounded-lg text-black" type="number" min="0" id="deposit-amount">
+            <button id="deposit-btn" class="block bg-blue-600 text-xl mt-3 py-2 px-5 rounded-lg">Deposit</button>
+        </div>
+        <div class="bg-red-500 p-10 rounded-xl">
+            <p class="mb-2 text-3xl">Your Withdraw</p>
+            <input class="w-10/12 p-2 rounded-lg text-black" type="number" min="0" id="withdraw-amount">
+            <button id="withdraw-btn" class="block bg-blue-600 text-xl mt-3 py-2 px-5 rounded-lg">Widraw</button>
+        </div>
+    </div>
+    <!-- link js file -->
+    <script src="sript.js"></script>
+</body>
+</html>
