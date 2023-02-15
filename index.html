@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Website</title>
+    <link rel="shortcut icon" href="/images/bank-icon.png" type="image/x-icon">
     <!-- tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
         theme: {
@@ -30,7 +32,7 @@
             <p class="mb-2">Withdraw</p>
             <p>$<span id="total-withdraw" class="pl-1">00</span></p>
         </div>
-        <div class="text-3xl bg-blue-600 p-10 rounded-xl">
+        <div id="balance-container" class="text-3xl bg-blue-600 p-10 rounded-xl">
             <p class="mb-2">Balance</p>
             <p>$<span id="total-balance" class="pl-1">00</span></p>
         </div>
@@ -38,13 +40,13 @@
     <div class="grid mt-5 grid-cols-2 w-9/12 gap-3 text-yellow-50 mx-auto font-semibold">
         <div class="bg-lime-500 p-10 rounded-xl">
             <p class="mb-2 text-3xl">Your Deposit</p>
-            <input class="w-10/12 p-2 rounded-lg text-black" type="number" min="0" id="deposit-amount">
-            <button id="deposit-btn" class="block bg-blue-600 text-xl mt-3 py-2 px-5 rounded-lg">Deposit</button>
+            <input class="w-10/12 p-2 blcok rounded-lg text-black" type="number" min="0" id="deposit-amount">
+            <button id="deposit-btn" class="bg-blue-600 text-xl mt-3 py-2 px-5 rounded-lg">Deposit</button>
         </div>
         <div class="bg-red-500 p-10 rounded-xl">
             <p class="mb-2 text-3xl">Your Withdraw</p>
-            <input class="w-10/12 p-2 rounded-lg text-black" type="number" min="0" id="withdraw-amount">
-            <button id="withdraw-btn" class="block bg-blue-600 text-xl mt-3 py-2 px-5 rounded-lg">Widraw</button>
+            <input class="w-10/12 p-2 block rounded-lg text-black" type="number" min="0" id="withdraw-amount">
+            <button id="withdraw-btn" class="bg-blue-600 text-xl mt-3 py-2 px-5 rounded-lg">Widraw</button>
         </div>
     </div>
     <!-- link js file -->
